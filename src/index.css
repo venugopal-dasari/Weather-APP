@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply min-h-screen;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1A1A2E 0%, #2C2C3E 25%, #3399FF 50%, #1A1A2E 75%, #2C2C3E 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer components {
+  .weather-card {
+    @apply bg-white/15 backdrop-blur-md rounded-3xl shadow-2xl border border-white/40;
+    backdrop-filter: blur(20px);
+  }
+  
+  .weather-gradient {
+    @apply bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600;
+  }
+  
+  .glass-effect {
+    @apply bg-white/20 backdrop-blur-lg border border-white/40;
+    backdrop-filter: blur(25px);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather-icon {
+    @apply w-20 h-20 text-blue-300 drop-shadow-2xl;
+    filter: drop-shadow(0 0 20px rgba(51, 153, 255, 0.5));
+  }
+  
+  .metric-card {
+    @apply bg-white/20 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/50;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+  }
+  
+  .metric-card:hover {
+    @apply bg-white/30 transform scale-105;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-container {
+    @apply bg-white/30 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50;
+    backdrop-filter: blur(30px);
+  }
+  
+  .search-input {
+    @apply bg-white/40 backdrop-blur-lg border-0 rounded-2xl shadow-xl text-gray-800 placeholder-gray-600;
+    backdrop-filter: blur(20px);
+  }
+  
+  .cold-gradient {
+    background: linear-gradient(135deg, #1A1A2E 0%, #2C2C3E 25%, #3399FF 50%, #1A1A2E 75%, #2C2C3E 100%);
+    background-size: 300% 300%;
+    animation: coldGradient 8s ease infinite;
+  }
+  
+  /* Weather condition colors */
+  .weather-clear {
+    color: #FDB813;
+    filter: drop-shadow(0 0 20px rgba(253, 184, 19, 0.5));
+  }
+  
+  .weather-partly-cloudy {
+    color: #B0BEC5;
+    filter: drop-shadow(0 0 20px rgba(176, 190, 197, 0.5));
+  }
+  
+  .weather-cloudy {
+    color: #90A4AE;
+    filter: drop-shadow(0 0 20px rgba(144, 164, 174, 0.5));
+  }
+  
+  .weather-rain {
+    color: #4FC3F7;
+    filter: drop-shadow(0 0 20px rgba(79, 195, 247, 0.5));
+  }
+  
+  .weather-thunderstorm {
+    color: #455A64;
+    filter: drop-shadow(0 0 20px rgba(69, 90, 100, 0.5));
+  }
+  
+  .weather-snow {
+    color: #E0F7FA;
+    filter: drop-shadow(0 0 20px rgba(224, 247, 250, 0.5));
+  }
+  
+  .weather-fog {
+    color: #CFD8DC;
+    filter: drop-shadow(0 0 20px rgba(207, 216, 220, 0.5));
+  }
+  
+  .weather-wind {
+    color: #81D4FA;
+    filter: drop-shadow(0 0 20px rgba(129, 212, 250, 0.5));
+  }
+  
+  /* Temperature gradient colors */
+  .temp-below-10 {
+    color: #004DFF;
+  }
+  
+  .temp-10-to-0 {
+    color: #2196F3;
+  }
+  
+  .temp-1-to-10 {
+    color: #4CAF50;
+  }
+  
+  .temp-11-to-20 {
+    color: #FFC107;
+  }
+  
+  .temp-21-to-30 {
+    color: #FF5722;
+  }
+  
+  .temp-above-30 {
+    color: #D32F2F;
+  }
+  
+  @keyframes coldGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes hotGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} 
