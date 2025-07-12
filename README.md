@@ -176,13 +176,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Framer Motion](https://www.framer.com/motion/) for animations
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 
-## 📞 Support
+## 📞 Support: +91-8055960149
 
 If you have any questions or need help, feel free to:
 
 - Open an issue on GitHub
-- Contact me at [your-email@example.com]
+- Contact me at venugopaldasari2004@gmail.com
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Venugopal Dasari
