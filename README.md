@@ -19,7 +19,7 @@ A beautiful, responsive weather application built with React, TypeScript, and Ta
 
 ## 🚀 Live Demo
 
-[View the live application here](https://your-username.github.io/weather-app)
+[View the live application here](https://venugopal-dasari.github.io/Weather-APP)
 
 ## 🛠️ Technologies Used
 
@@ -37,8 +37,8 @@ A beautiful, responsive weather application built with React, TypeScript, and Ta
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
+   git clone https://github.com/venugopal-dasari/Weather-APP.git
+   cd Weather-APP
    ```
 
 2. **Install dependencies**
